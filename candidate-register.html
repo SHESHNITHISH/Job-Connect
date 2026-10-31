@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Candidate Registration - JobConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">JobConnect</h2>
+
+            <div class="nav-buttons">
+                <a href="index.html" class="login-btn">Home</a>
+                <a href="login.html" class="register-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="register-section">
+
+        <div class="register-container">
+
+            <h1>Create Candidate Account</h1>
+
+            <p>Join JobConnect and find your dream job.</p>
+
+            <form id="candidateForm">
+
+                <label>Full Name</label>
+                <input type="text" id="name"
+                    placeholder="Enter your full name" required>
+
+                <label>Email Address</label>
+                <input type="email" id="email"
+                    placeholder="Enter your email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" id="phone"
+                    placeholder="Enter your phone number"
+                    pattern="[0-9]{10}" maxlength="10" required>
+
+                <label>Password</label>
+                <input type="password" id="password"
+                    placeholder="Create password" required>
+
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword"
+                    placeholder="Confirm password" required>
+
+                <label>Qualification</label>
+                <select id="qualification" required>
+                    <option value="">Select Qualification</option>
+                    <option>B.Tech</option>
+                    <option>B.E</option>
+                    <option>B.Sc</option>
+                    <option>BCA</option>
+                    <option>MCA</option>
+                    <option>M.Tech</option>
+                    <option>Other</option>
+                </select>
+
+                <label>Skills</label>
+                <textarea id="skills"
+                    placeholder="Example: Python, HTML, CSS, JavaScript"
+                    required></textarea>
+
+                <label>Experience</label>
+                <select id="experience" required>
+                    <option value="">Select Experience</option>
+                    <option>Fresher</option>
+                    <option>0-1 Year</option>
+                    <option>1-2 Years</option>
+                    <option>2-5 Years</option>
+                    <option>5+ Years</option>
+                </select>
+
+                <label>Upload Resume (PDF)</label>
+                <input type="file" id="resume"
+                    accept=".pdf" required>
+
+                <button type="submit" class="submit-btn">
+                    Create Account
+                </button>
+
+            </form>
+
+            <p class="login-text">
+                Already have an account?
+                <a href="login.html">Login Here</a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

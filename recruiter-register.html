@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recruiter Registration - JobConnect</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">JobConnect</h2>
+
+            <div class="nav-buttons">
+                <a href="../index.html" class="login-btn">Home</a>
+                <a href="login.html" class="register-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Recruiter Registration -->
+    <section class="register-section">
+
+        <div class="register-container">
+
+            <h1>Create Recruiter Account</h1>
+
+            <p>Register your company and find talented candidates.</p>
+
+            <form id="recruiterForm">
+
+                <label>Recruiter Name</label>
+                <input type="text" id="recruiterName"
+                    placeholder="Enter your full name" required>
+
+                <label>Official Email</label>
+                <input type="email" id="recruiterEmail"
+                    placeholder="Enter company email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" id="recruiterPhone"
+                    placeholder="Enter phone number"
+                    pattern="[0-9]{10}" maxlength="10" required>
+
+                <label>Password</label>
+                <input type="password" id="recruiterPassword"
+                    placeholder="Create password" required>
+
+                <label>Confirm Password</label>
+                <input type="password" id="recruiterConfirmPassword"
+                    placeholder="Confirm password" required>
+
+                <label>Company Name</label>
+                <input type="text" id="companyName"
+                    placeholder="Enter company name" required>
+
+                <label>Company Description</label>
+                <textarea id="companyDescription"
+                    placeholder="Describe your company"
+                    required></textarea>
+
+                <label>Company Location</label>
+                <input type="text" id="companyLocation"
+                    placeholder="Enter company location" required>
+
+                <label>Company Website</label>
+                <input type="url" id="companyWebsite"
+                    placeholder="https://example.com">
+
+                <button type="submit" class="submit-btn">
+                    Register Company
+                </button>
+
+            </form>
+
+            <p class="login-text">
+                Already have an account?
+                <a href="login.html">Login Here</a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

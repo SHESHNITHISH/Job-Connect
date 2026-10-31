@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - JobConnect</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">JobConnect</h2>
+
+            <div class="nav-buttons">
+                <a href="../index.html" class="login-btn">Home</a>
+                <a href="candidate-register.html" class="register-btn">
+                    Register
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="register-section">
+
+        <div class="register-container login-container">
+
+            <h1>Welcome Back!</h1>
+
+            <p>Login to your JobConnect account.</p>
+
+            <form id="loginForm">
+
+                <label>Email Address</label>
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label>Password</label>
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <label>Login As</label>
+
+                <select id="loginRole" required>
+                    <option value="">Select Account Type</option>
+                    <option value="candidate">Candidate</option>
+                    <option value="recruiter">Recruiter</option>
+                </select>
+
+                <button type="submit" class="submit-btn">
+                    Login
+                </button>
+
+            </form>
+
+            <p class="login-text">
+                Don't have an account?
+                <a href="candidate-register.html">
+                    Register as Candidate
+                </a>
+            </p>
+
+            <p class="login-text">
+                Are you an employer?
+                <a href="recruiter-register.html">
+                    Register as Recruiter
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job | JobConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="post-job-page">
+
+    <header class="details-navbar">
+        <a href="../index.html" class="logo">JobConnect</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="recruiter-dashboard.html">Dashboard</a>
+            <a href="recruiter-profile.html">Company Profile</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="post-job-container">
+
+        <div class="post-job-heading">
+            <h1>Post a New Job</h1>
+            <p>Find the right candidates for your company.</p>
+        </div>
+
+        <form id="postJobForm">
+
+            <section class="post-job-card">
+                <h2>Basic Job Information</h2>
+
+                <div class="post-form-grid">
+
+                    <div class="post-form-group">
+                        <label for="jobTitle">Job Title *</label>
+                        <input type="text" id="jobTitle"
+                               placeholder="Example: Python Developer" required>
+                    </div>
+
+                    <div class="post-form-group">
+                        <label for="companyName">Company Name *</label>
+                        <input type="text" id="companyName"
+                               placeholder="Enter company name" required>
+                    </div>
+
+                    <div class="post-form-group">
+                        <label for="jobLocation">Job Location *</label>
+                        <input type="text" id="jobLocation"
+                               placeholder="Example: Coimbatore" required>
+                    </div>
+
+                    <div class="post-form-group">
+                        <label for="jobType">Job Type *</label>
+                        <select id="jobType" required>
+                            <option value="">Select job type</option>
+                            <option value="Full-time">Full-time</option>
+                            <option value="Part-time">Part-time</option>
+                            <option value="Internship">Internship</option>
+                            <option value="Contract">Contract</option>
+                        </select>
+                    </div>
+
+                    <div class="post-form-group">
+                        <label for="experience">Experience Required *</label>
+                        <select id="experience" required>
+                            <option value="">Select experience</option>
+                            <option value="Fresher">Fresher</option>
+                            <option value="0-1 Year">0-1 Year</option>
+                            <option value="1-2 Years">1-2 Years</option>
+                            <option value="2-5 Years">2-5 Years</option>
+                            <option value="5+ Years">5+ Years</option>
+                        </select>
+                    </div>
+
+                    <div class="post-form-group">
+                        <label for="salary">Salary / CTC</label>
+                        <input type="text" id="salary"
+                               placeholder="Example: 2.5 - 4 LPA">
+                    </div>
+
+                    <div class="post-form-group">
+                        <label for="vacancies">Number of Vacancies *</label>
+                        <input type="number" id="vacancies"
+                               min="1" placeholder="Example: 5" required>
+                    </div>
+
+                    <div class="post-form-group">
+                        <label for="deadline">Application Deadline *</label>
+                        <input type="date" id="deadline" required>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="post-job-card">
+                <h2>Job Description</h2>
+
+                <div class="post-form-group">
+                    <label for="description">Job Description *</label>
+                    <textarea id="description" rows="5"
+                              placeholder="Explain the job role and responsibilities..."
+                              required></textarea>
+                </div>
+
+                <div class="post-form-group">
+                    <label for="responsibilities">Key Responsibilities *</label>
+                    <textarea id="responsibilities" rows="4"
+                              placeholder="Enter the main responsibilities..."
+                              required></textarea>
+                </div>
+
+                <div class="post-form-group">
+                    <label for="skills">Required Skills *</label>
+                    <input type="text" id="skills"
+                           placeholder="Python, Flask, MySQL, HTML, CSS"
+                           required>
+                </div>
+
+                <div class="post-form-group">
+                    <label for="qualification">Educational Qualification *</label>
+                    <input type="text" id="qualification"
+                           placeholder="Example: B.E / B.Tech in IT or CSE"
+                           required>
+                </div>
+            </section>
+
+            <div class="post-job-actions">
+                <button type="reset" class="cancel-job-btn">
+                    Clear Form
+                </button>
+
+                <button type="submit" class="publish-job-btn">
+                    Publish Job
+                </button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 JobConnect. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

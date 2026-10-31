@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Dashboard - JobConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2 class="logo">JobConnect</h2>
+
+        <p class="sidebar-label">RECRUITER MENU</p>
+
+        <ul class="sidebar-menu">
+            <li><a href="recruiter-dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="post-job.html">Post a Job</a></li>
+            <li><a href="recruiter-profile.html">Company Profile</a></li>
+            <li><a href="my-jobs.html">Manage Jobs</a></li>
+            <li><a href="applicants.html">Applicants</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+
+        <!-- Header -->
+        <header class="dashboard-header">
+
+            <div>
+                <h2>Recruiter Dashboard</h2>
+                <p>Manage your job postings and candidates</p>
+            </div>
+
+            <div class="user-info">
+                <div class="user-avatar">R</div>
+                <span>Recruiter</span>
+            </div>
+
+        </header>
+
+        <!-- Welcome -->
+        <section class="welcome-section">
+
+            <h1>Welcome Back, Recruiter!</h1>
+
+            <p>
+                Find talented professionals and build your dream team.
+            </p>
+
+            <a href="post-job.html" class="dashboard-btn">
+                + Post New Job
+            </a>
+
+        </section>
+
+        <!-- Statistics -->
+        <section class="stats-container">
+
+            <div class="stat-card">
+                <div class="stat-icon">💼</div>
+                <h3>12</h3>
+                <p>Total Jobs Posted</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <h3>85</h3>
+                <p>Total Applicants</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⭐</div>
+                <h3>18</h3>
+                <p>Shortlisted</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⏳</div>
+                <h3>24</h3>
+                <p>Pending Reviews</p>
+            </div>
+
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="dashboard-card">
+
+            <h2>Quick Actions</h2>
+
+            <div class="quick-actions">
+
+                <a href="post-job.html" class="action-card">
+                    <span>➕</span>
+                    <h3>Post a Job</h3>
+                    <p>Create a new vacancy</p>
+                </a>
+
+                <a href="my-jobs.html" class="action-card">
+                    <span>📋</span>
+                    <h3>Manage Jobs</h3>
+                    <p>Edit or remove job posts</p>
+                </a>
+
+                <a href="applicants.html" class="action-card">
+                    <span>👥</span>
+                    <h3>View Applicants</h3>
+                    <p>Review candidate applications</p>
+                </a>
+
+                <a href="recruiter-profile.html" class="action-card">
+                    <span>🏢</span>
+                    <h3>Company Profile</h3>
+                    <p>Update company details</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Job Posts -->
+        <section class="dashboard-card">
+
+            <div class="section-heading">
+                <h2>Recent Job Posts</h2>
+                <a href="my-jobs.html">View All</a>
+            </div>
+
+            <div class="table-wrapper">
+
+                <table class="application-table">
+
+                    <thead>
+                        <tr>
+                            <th>Job Title</th>
+                            <th>Location</th>
+                            <th>Applicants</th>
+                            <th>Job Type</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Python Developer</td>
+                            <td>Coimbatore</td>
+                            <td>25</td>
+                            <td>Full-time</td>
+                            <td><a href="applicants.html">View</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Frontend Developer</td>
+                            <td>Chennai</td>
+                            <td>18</td>
+                            <td>Full-time</td>
+                            <td><a href="applicants.html">View</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Software Intern</td>
+                            <td>Remote</td>
+                            <td>42</td>
+                            <td>Internship</td>
+                            <td><a href="applicants.html">View</a></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Applicants -->
+        <section class="dashboard-card">
+
+            <h2>Recent Applicants</h2>
+
+            <div class="dashboard-job">
+                <div>
+                    <h3>Arun Kumar</h3>
+                    <p>Python Developer | B.Tech IT</p>
+                </div>
+                <a href="applicants.html">View Profile</a>
+            </div>
+
+            <div class="dashboard-job">
+                <div>
+                    <h3>Priya Sharma</h3>
+                    <p>Frontend Developer | B.E CSE</p>
+                </div>
+                <a href="applicants.html">View Profile</a>
+            </div>
+
+            <div class="dashboard-job">
+                <div>
+                    <h3>Rahul Kumar</h3>
+                    <p>Software Developer | B.Tech IT</p>
+                </div>
+                <a href="applicants.html">View Profile</a>
+            </div>
+
+        </section>
+
+        <footer class="dashboard-footer">
+            © 2026 JobConnect. All Rights Reserved.
+        </footer>
+
+    </main>
+
+</body>
+</html>

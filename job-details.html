@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details | JobConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="details-page">
+
+    <header class="details-navbar">
+        <a href="../index.html" class="logo">JobConnect</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="job-listing.html">Find Jobs</a>
+            <a href="candidate-dashboard.html">Dashboard</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="job-details-container">
+
+        <a href="job-listing.html" class="back-link">← Back to Jobs</a>
+
+        <section class="job-details-header">
+            <div>
+                <span class="job-status">Actively Hiring</span>
+                <h1 id="detailTitle">Python Developer</h1>
+                <h3 id="detailCompany">ABC Technologies</h3>
+                <div class="job-meta">
+                    <span id="detailLocation">📍 Coimbatore</span>
+                    <span id="detailType">💼 Full-time</span>
+                    <span id="detailExperience">🎓 Fresher</span>
+                    <span id="detailSalary">💰 ₹2.5 - 4 LPA</span>
+                </div>
+            </div>
+
+            <button class="apply-main-btn" id="applyNowBtn">
+                Apply Now
+            </button>
+        </section>
+
+        <section class="job-details-content">
+
+            <div class="job-description">
+
+                <div class="details-card">
+                    <h2>Job Description</h2>
+                    <p id="detailDescription">
+                        We are looking for a motivated Python Developer
+                        to join our development team. The candidate will
+                        work on developing and maintaining web applications
+                        using Python and related technologies.
+                    </p>
+                </div>
+
+                <div class="details-card">
+                    <h2>Key Responsibilities</h2>
+                    <ul>
+                        <li>Develop and maintain applications using Python.</li>
+                        <li>Write clean, reusable and efficient code.</li>
+                        <li>Work with REST APIs and databases.</li>
+                        <li>Identify and fix software bugs.</li>
+                        <li>Collaborate with the development team.</li>
+                    </ul>
+                </div>
+
+                <div class="details-card">
+                    <h2>Required Skills</h2>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div class="details-card">
+                    <h2>Qualifications</h2>
+                    <ul>
+                        <li>B.E / B.Tech in IT, CSE or related fields.</li>
+                        <li>Freshers are welcome to apply.</li>
+                        <li>Basic knowledge of Python programming.</li>
+                        <li>Good logical thinking and problem-solving skills.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <aside class="job-sidebar">
+                <div class="details-card">
+                    <h2>Job Overview</h2>
+
+                    <div class="overview-item">
+                        <strong>Job Role</strong>
+                        <span id="overviewTitle">Python Developer</span>
+                    </div>
+
+                    <div class="overview-item">
+                        <strong>Experience</strong>
+                        <span id="overviewExperience">Fresher</span>
+                    </div>
+
+                    <div class="overview-item">
+                        <strong>Job Type</strong>
+                        <span id="overviewType">Full-time</span>
+                    </div>
+
+                    <div class="overview-item">
+                        <strong>Location</strong>
+                        <span id="overviewLocation">Coimbatore</span>
+                    </div>
+
+                    <div class="overview-item">
+                        <strong>Salary</strong>
+                        <span id="overviewSalary">₹2.5 - 4 LPA</span>
+                    </div>
+                </div>
+
+                <div class="details-card company-card">
+                    <h2>About Company</h2>
+                    <p>
+                        ABC Technologies is a software development company
+                        focused on building modern digital solutions.
+                    </p>
+                </div>
+            </aside>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 JobConnect. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        const applyButton = document.getElementById("applyNowBtn");
+
+        applyButton.addEventListener("click", function () {
+            const isLoggedIn = false;
+
+            if (!isLoggedIn) {
+                alert("Please login as a candidate to apply for this job.");
+                window.location.href = "login.html";
+                return;
+            }
+
+            alert("Application submitted successfully!");
+        });
+    </script>
+
+</body>
+</html>

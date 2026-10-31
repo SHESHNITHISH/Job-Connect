@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Jobs - JobConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2 class="logo">JobConnect</h2>
+
+        <p class="sidebar-label">CANDIDATE MENU</p>
+
+        <ul class="sidebar-menu">
+            <li><a href="candidate-dashboard.html">Dashboard</a></li>
+            <li><a href="candidate-profile.html">My Profile</a></li>
+            <li><a href="job-listing.html" class="active">Find Jobs</a></li>
+            <li><a href="my-applications.html">My Applications</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+            <div>
+                <h2>Find Jobs</h2>
+                <p>Discover opportunities that match your skills</p>
+            </div>
+        </header>
+
+        <!-- Search Section -->
+        <section class="job-search-panel">
+            <h2>Find Your Dream Job</h2>
+
+            <form id="jobFilterForm" class="job-filter-form">
+
+                <input type="text" id="jobKeyword"
+                    placeholder="Job title or keyword">
+
+                <input type="text" id="jobLocation"
+                    placeholder="Enter location">
+
+                <select id="jobExperience">
+                    <option value="">All Experience</option>
+                    <option value="Fresher">Fresher</option>
+                    <option value="0-1 Year">0-1 Year</option>
+                    <option value="1-2 Years">1-2 Years</option>
+                    <option value="2-5 Years">2-5 Years</option>
+                    <option value="5+ Years">5+ Years</option>
+                </select>
+
+                <select id="jobType">
+                    <option value="">All Job Types</option>
+                    <option value="Full-time">Full-time</option>
+                    <option value="Part-time">Part-time</option>
+                    <option value="Internship">Internship</option>
+                </select>
+
+                <button type="submit" class="submit-btn">
+                    Search Jobs
+                </button>
+
+                <button type="button" id="clearJobFilters"
+                    class="clear-filter-btn">
+                    Clear Filters
+                </button>
+
+            </form>
+        </section>
+
+        <!-- Job Results -->
+        <section class="job-results-section">
+
+            <div class="section-heading">
+                <h2>Available Jobs</h2>
+                <span id="jobCount">6 Jobs Found</span>
+            </div>
+
+            <div class="job-list-container" id="jobList">
+
+                <!-- Job 1 -->
+                <article class="listing-job-card"
+                    data-title="Python Developer"
+                    data-location="Coimbatore"
+                    data-experience="Fresher"
+                    data-type="Full-time">
+
+                    <div class="listing-job-top">
+                        <div>
+                            <h3>Python Developer</h3>
+                            <p>ABC Technologies</p>
+                        </div>
+                        <span class="job-type-badge">Full-time</span>
+                    </div>
+
+                    <div class="job-meta">
+                        <span>📍 Coimbatore</span>
+                        <span>💰 ₹2.5 - 4 LPA</span>
+                        <span>🎓 Fresher</span>
+                    </div>
+
+                    <p class="job-description">
+                        Looking for a Python developer with knowledge
+                        of Python, Flask, SQL and REST APIs.
+                    </p>
+
+                    <div class="job-card-actions">
+                        <a href="job-details.html"
+                            class="view-job-btn">View Details</a>
+                        <button class="apply-job-btn"
+                            data-job="Python Developer">Apply Now</button>
+                    </div>
+
+                </article>
+
+                <!-- Job 2 -->
+                <article class="listing-job-card"
+                    data-title="Frontend Developer"
+                    data-location="Chennai"
+                    data-experience="0-1 Year"
+                    data-type="Full-time">
+
+                    <div class="listing-job-top">
+                        <div>
+                            <h3>Frontend Developer</h3>
+                            <p>Digital Solutions</p>
+                        </div>
+                        <span class="job-type-badge">Full-time</span>
+                    </div>
+
+                    <div class="job-meta">
+                        <span>📍 Chennai</span>
+                        <span>💰 ₹3 - 5 LPA</span>
+                        <span>🎓 0-1 Year</span>
+                    </div>
+
+                    <p class="job-description">
+                        Seeking a frontend developer skilled in
+                        HTML, CSS, JavaScript and responsive design.
+                    </p>
+
+                    <div class="job-card-actions">
+                        <a href="job-details.html"
+                            class="view-job-btn">View Details</a>
+                        <button class="apply-job-btn"
+                            data-job="Frontend Developer">Apply Now</button>
+                    </div>
+
+                </article>
+
+                <!-- Job 3 -->
+                <article class="listing-job-card"
+                    data-title="Software Developer Intern"
+                    data-location="Remote"
+                    data-experience="Fresher"
+                    data-type="Internship">
+
+                    <div class="listing-job-top">
+                        <div>
+                            <h3>Software Developer Intern</h3>
+                            <p>Innovation Labs</p>
+                        </div>
+                        <span class="job-type-badge">Internship</span>
+                    </div>
+
+                    <div class="job-meta">
+                        <span>📍 Remote</span>
+                        <span>💰 ₹10,000/month</span>
+                        <span>🎓 Fresher</span>
+                    </div>
+
+                    <p class="job-description">
+                        Internship opportunity for freshers interested
+                        in Python programming and software development.
+                    </p>
+
+                    <div class="job-card-actions">
+                        <a href="job-details.html"
+                            class="view-job-btn">View Details</a>
+                        <button class="apply-job-btn"
+                            data-job="Software Developer Intern">Apply Now</button>
+                    </div>
+
+                </article>
+
+                <!-- Job 4 -->
+                <article class="listing-job-card"
+                    data-title="IT Support Engineer"
+                    data-location="Coimbatore"
+                    data-experience="Fresher"
+                    data-type="Full-time">
+
+                    <div class="listing-job-top">
+                        <div>
+                            <h3>IT Support Engineer</h3>
+                            <p>Tech Services</p>
+                        </div>
+                        <span class="job-type-badge">Full-time</span>
+                    </div>
+
+                    <div class="job-meta">
+                        <span>📍 Coimbatore</span>
+                        <span>💰 ₹2 - 3 LPA</span>
+                        <span>🎓 Fresher</span>
+                    </div>
+
+                    <p class="job-description">
+                        Responsible for troubleshooting, system support
+                        and technical issue resolution.
+                    </p>
+
+                    <div class="job-card-actions">
+                        <a href="job-details.html"
+                            class="view-job-btn">View Details</a>
+                        <button class="apply-job-btn"
+                            data-job="IT Support Engineer">Apply Now</button>
+                    </div>
+
+                </article>
+
+                <!-- Job 5 -->
+                <article class="listing-job-card"
+                    data-title="Backend Developer"
+                    data-location="Bangalore"
+                    data-experience="1-2 Years"
+                    data-type="Full-time">
+
+                    <div class="listing-job-top">
+                        <div>
+                            <h3>Backend Developer</h3>
+                            <p>Cloud Systems</p>
+                        </div>
+                        <span class="job-type-badge">Full-time</span>
+                    </div>
+
+                    <div class="job-meta">
+                        <span>📍 Bangalore</span>
+                        <span>💰 ₹4 - 6 LPA</span>
+                        <span>🎓 1-2 Years</span>
+                    </div>
+
+                    <p class="job-description">
+                        Experience with Python, Flask, databases
+                        and REST API development preferred.
+                    </p>
+
+                    <div class="job-card-actions">
+                        <a href="job-details.html"
+                            class="view-job-btn">View Details</a>
+                        <button class="apply-job-btn"
+                            data-job="Backend Developer">Apply Now</button>
+                    </div>
+
+                </article>
+
+                <!-- Job 6 -->
+                <article class="listing-job-card"
+                    data-title="Web Developer"
+                    data-location="Madurai"
+                    data-experience="Fresher"
+                    data-type="Part-time">
+
+                    <div class="listing-job-top">
+                        <div>
+                            <h3>Web Developer</h3>
+                            <p>Web Creators</p>
+                        </div>
+                        <span class="job-type-badge">Part-time</span>
+                    </div>
+
+                    <div class="job-meta">
+                        <span>📍 Madurai</span>
+                        <span>💰 ₹12,000/month</span>
+                        <span>🎓 Fresher</span>
+                    </div>
+
+                    <p class="job-description">
+                        Build and maintain responsive websites using
+                        HTML, CSS and JavaScript.
+                    </p>
+
+                    <div class="job-card-actions">
+                        <a href="job-details.html"
+                            class="view-job-btn">View Details</a>
+                        <button class="apply-job-btn"
+                            data-job="Web Developer">Apply Now</button>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p id="noJobsMessage" class="no-jobs-message" hidden>
+                No matching jobs found. Try different filters.
+            </p>
+
+        </section>
+
+        <footer class="dashboard-footer">
+            © 2026 JobConnect. All Rights Reserved.
+        </footer>
+
+    </main>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicants | JobConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="applicants-page">
+
+    <header class="details-navbar">
+        <a href="../index.html" class="logo">JobConnect</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="recruiter-dashboard.html">Dashboard</a>
+            <a href="post-job.html">Post a Job</a>
+            <a href="recruiter-profile.html">Company Profile</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="applicants-container">
+
+        <div class="applicants-heading">
+            <h1>Job Applicants</h1>
+            <p>Review candidates and manage their applications.</p>
+        </div>
+
+        <section class="applicant-summary">
+            <div class="applicant-summary-card">
+                <h3 id="applicantTotal">5</h3>
+                <p>Total Applicants</p>
+            </div>
+
+            <div class="applicant-summary-card">
+                <h3 id="applicantPending">2</h3>
+                <p>Pending</p>
+            </div>
+
+            <div class="applicant-summary-card">
+                <h3 id="applicantShortlisted">2</h3>
+                <p>Shortlisted</p>
+            </div>
+
+            <div class="applicant-summary-card">
+                <h3 id="applicantRejected">1</h3>
+                <p>Rejected</p>
+            </div>
+        </section>
+
+        <section class="applicants-table-card">
+
+            <div class="applicants-table-heading">
+                <h2>All Applicants</h2>
+
+                <div class="applicant-filters">
+                    <input
+                        type="search"
+                        id="applicantSearch"
+                        placeholder="Search candidate..."
+                    >
+
+                    <select id="applicantStatusFilter">
+                        <option value="All">All Status</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Shortlisted">Shortlisted</option>
+                        <option value="Rejected">Rejected</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="applicants-table-wrapper">
+                <table class="applicants-table">
+                    <thead>
+                        <tr>
+                            <th>Candidate</th>
+                            <th>Email</th>
+                            <th>Applied For</th>
+                            <th>Experience</th>
+                            <th>Applied Date</th>
+                            <th>Status</th>
+                            <th>Update Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="applicantsTableBody">
+
+                        <tr data-status="Pending">
+                            <td>Arun Kumar</td>
+                            <td>arun@example.com</td>
+                            <td>Python Developer</td>
+                            <td>Fresher</td>
+                            <td>28 Oct 2026</td>
+                            <td>
+                                <span class="applicant-status pending">Pending</span>
+                            </td>
+                            <td>
+                                <select class="update-applicant-status">
+                                    <option value="Pending" selected>Pending</option>
+                                    <option value="Shortlisted">Shortlisted</option>
+                                    <option value="Rejected">Rejected</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr data-status="Shortlisted">
+                            <td>Priya Sharma</td>
+                            <td>priya@example.com</td>
+                            <td>Python Developer</td>
+                            <td>1 Year</td>
+                            <td>27 Oct 2026</td>
+                            <td>
+                                <span class="applicant-status shortlisted">Shortlisted</span>
+                            </td>
+                            <td>
+                                <select class="update-applicant-status">
+                                    <option value="Pending">Pending</option>
+                                    <option value="Shortlisted" selected>Shortlisted</option>
+                                    <option value="Rejected">Rejected</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr data-status="Rejected">
+                            <td>Rahul Raj</td>
+                            <td>rahul@example.com</td>
+                            <td>Frontend Developer</td>
+                            <td>Fresher</td>
+                            <td>26 Oct 2026</td>
+                            <td>
+                                <span class="applicant-status rejected">Rejected</span>
+                            </td>
+                            <td>
+                                <select class="update-applicant-status">
+                                    <option value="Pending">Pending</option>
+                                    <option value="Shortlisted">Shortlisted</option>
+                                    <option value="Rejected" selected>Rejected</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr data-status="Pending">
+                            <td>Vijay Kumar</td>
+                            <td>vijay@example.com</td>
+                            <td>Python Developer</td>
+                            <td>Fresher</td>
+                            <td>25 Oct 2026</td>
+                            <td>
+                                <span class="applicant-status pending">Pending</span>
+                            </td>
+                            <td>
+                                <select class="update-applicant-status">
+                                    <option value="Pending" selected>Pending</option>
+                                    <option value="Shortlisted">Shortlisted</option>
+                                    <option value="Rejected">Rejected</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr data-status="Shortlisted">
+                            <td>Divya S</td>
+                            <td>divya@example.com</td>
+                            <td>Frontend Developer</td>
+                            <td>2 Years</td>
+                            <td>24 Oct 2026</td>
+                            <td>
+                                <span class="applicant-status shortlisted">Shortlisted</span>
+                            </td>
+                            <td>
+                                <select class="update-applicant-status">
+                                    <option value="Pending">Pending</option>
+                                    <option value="Shortlisted" selected>Shortlisted</option>
+                                    <option value="Rejected">Rejected</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="noApplicantsMessage" hidden>
+                No applicants found.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 JobConnect. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

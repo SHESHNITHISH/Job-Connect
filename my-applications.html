@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Applications | JobConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="applications-page">
+
+    <header class="details-navbar">
+        <a href="../index.html" class="logo">JobConnect</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="job-listing.html">Find Jobs</a>
+            <a href="candidate-dashboard.html">Dashboard</a>
+            <a href="candidate-profile.html">My Profile</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="applications-container">
+
+        <div class="applications-heading">
+            <h1>My Applications</h1>
+            <p>Track your job applications and their current status.</p>
+        </div>
+
+        <section class="application-summary">
+            <div class="application-summary-card">
+                <h3 id="totalApplications">4</h3>
+                <p>Total Applications</p>
+            </div>
+
+            <div class="application-summary-card">
+                <h3 id="pendingApplications">2</h3>
+                <p>Pending</p>
+            </div>
+
+            <div class="application-summary-card">
+                <h3 id="shortlistedApplications">1</h3>
+                <p>Shortlisted</p>
+            </div>
+
+            <div class="application-summary-card">
+                <h3 id="rejectedApplications">1</h3>
+                <p>Rejected</p>
+            </div>
+        </section>
+
+        <section class="applications-table-card">
+
+            <div class="applications-table-heading">
+                <h2>Application History</h2>
+
+                <select id="statusFilter">
+                    <option value="All">All Applications</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Shortlisted">Shortlisted</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+            </div>
+
+            <div class="applications-table-wrapper">
+                <table class="applications-list-table">
+                    <thead>
+                        <tr>
+                            <th>Job Title</th>
+                            <th>Company</th>
+                            <th>Location</th>
+                            <th>Applied Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="applicationsTableBody">
+                        <tr data-status="Pending">
+                            <td>Python Developer</td>
+                            <td>ABC Technologies</td>
+                            <td>Coimbatore</td>
+                            <td>25 Oct 2026</td>
+                            <td><span class="application-status pending">Pending</span></td>
+                        </tr>
+
+                        <tr data-status="Shortlisted">
+                            <td>Frontend Developer</td>
+                            <td>Creative Solutions</td>
+                            <td>Chennai</td>
+                            <td>22 Oct 2026</td>
+                            <td><span class="application-status shortlisted">Shortlisted</span></td>
+                        </tr>
+
+                        <tr data-status="Rejected">
+                            <td>Web Developer</td>
+                            <td>Digital Works</td>
+                            <td>Madurai</td>
+                            <td>20 Oct 2026</td>
+                            <td><span class="application-status rejected">Rejected</span></td>
+                        </tr>
+
+                        <tr data-status="Pending">
+                            <td>IT Support Engineer</td>
+                            <td>Tech Solutions</td>
+                            <td>Coimbatore</td>
+                            <td>18 Oct 2026</td>
+                            <td><span class="application-status pending">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="noApplicationsMessage" class="no-applications-message" hidden>
+                No applications found for this status.
+            </p>
+
+        </section>
+
+        <div class="applications-footer-link">
+            <a href="job-listing.html">← Find More Jobs</a>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 JobConnect. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
